@@ -1,6 +1,7 @@
 /* Remove default bullets */
 ul, #myUL {
   list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Remove margins and padding from the parent ul */
@@ -18,10 +19,12 @@ ul, #myUL {
 /* Create the caret/arrow with a unicode, and style it */
 .caret::before {
   content: "\25B6";
+  /* content: "\21B5";*/
   color: black;
   display: inline-block;
-  margin-right: 6px;
+  margin-right: 6px; 
 }
+
 
 /* Rotate the caret/arrow icon when clicked on (using JavaScript) */
 .caret-down::before {
