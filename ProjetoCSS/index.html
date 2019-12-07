@@ -7,81 +7,53 @@
         <meta name="author" content="Fabiana">
         <meta name="description" content="descrição bacanuda">
         <meta name="keywords" content="html5, tecnologia">
+
+        <link rel="stylesheet" href="css/estilo.css">
     </head>
-    <style>
-        body{
-            font-size: 22px;
-            font-family: sans-serif;
-            width: 700px;
-            margin: auto;
-        }
-        p{
-            line-height: 1.5;
-        }
-        .ul-menu{
-            text-transform: uppercase;
-        }
-        h1{
-            text-transform: uppercase;
-            color: white;
-            text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-        }
-        h2{
-            color:white;
-            border-bottom: solid 3px white;
-            background-color:dimgrey;
-            font-size: 20px;
-            margin: auto;
-        }
-        .img-principal{
-            float:initial;
-            background-size: cover;
-        }
-    </style>
+    
     <body>
         <div id="principal">
-            <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#">Quem sou</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </nav>
-            <div>
-                <h1>Curso Web Fundamentos</h1>
-                <p>Aprenda HTML, CSS e Javascript</p>
-                <img src="imagens/bg-3.jpg" class="img-principal" alt="">
-            </div>
+            <header class="hero">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#">Quem sou</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+                <div class="hero-content">
+                    <h1>Curso Web Fundamentos</h1>
+                    <p>Aprenda HTML, CSS e Javascript</p>
+                </div>
             </header>
         
-        <main>
-         <section>
-             <div class="card">
-                <img src="../imagens/card_01.png" alt="" />
-                <p>seletores</p>
-            </div>
-            <div class="card">
-                <img src="../imagens/card_08.jpg" alt="" />
-                <p>posicionamento</p>
-            </div>
-             <div class="card"></div>
-                <img src="../imagens/card_14.jpg" alt="" />
-                <p>fontes e ícones</p>
-            </div>
-         </section>
-         <section>
-             <article>
-                 <header>
-                    <h2 class="titulo">titulo</p>
-                </header>
-                <p>Primeiro paragrafo de exemplo</p>
-                <p>Segundo paragrafo de exemplo</p>
-            </article>
-         </section>
-        </main>
-        <footer>Copyright &copy; 2019</footer>
-    </div>
+            <main>
+                <section class="content-section">
+                    <div class="card">
+                        <img src="imagens/card_01.png" alt="" >
+                        <p>seletores</p>
+                    </div>
+                    <div class="card">
+                        <img src="imagens/card_08.jpg" alt="" >
+                        <p>posicionamento</p>
+                    </div>
+                    <div class="card">
+                        <img src="imagens/card_14.jpg" alt="" >
+                        <p>fontes e ícones</p>
+                    </div>
+                </section>
+                <section class="content-section">
+                    <article>
+                        <header>
+                            <h2 class="titulo">titulo</h2>
+                        </header>
+                        <p>Primeiro paragrafo de exemplo</p>
+                        <p>Segundo paragrafo de exemplo</p>
+                    </article>
+                </section>
+            </main>
+            <footer>Copyright &copy; 2019</footer>
+        </div>
     </body>
 </html>
 
