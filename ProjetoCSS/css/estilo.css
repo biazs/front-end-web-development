@@ -29,23 +29,26 @@ main{
     background-color: white;
     padding: 15px;
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-footer{
+.rodape{
     background-color: gray;
     padding: 15px;
-    margin: auto;
     text-align: center;
     color: white;
-    font-size: 12px;
-    text-shadow: 2px 2px 1px #333;
+    font-size: 14px;
+    text-shadow: 2px 2px 2px #333;
+    height: 40px;
+    line-height: 40px;
 }
 
 .titulo{
     background-color: rgb(231, 228, 228);
-    border-bottom: solid 3px  rgb(170, 167, 167);
+    border-bottom: solid 2px  rgb(170, 167, 167);
     margin-top: 2px;
     padding: 10px;
+    margin: 0;
 }
 
 p{
