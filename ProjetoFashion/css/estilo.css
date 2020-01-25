@@ -1,0 +1,55 @@
+body{
+    font-family: verdana, arial, sans-serif;
+    background: #ccc;
+    margin: 10px 100px 40px 100px;
+}
+.hero{
+    height: 500px;
+    background-position: right center;
+    background-size: cover;
+    border-top: 1px solid transparent;
+}
+.hero-content{
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+}
+.hero nav ul{
+    text-align: right;
+    margin: 20px 50px 0 0;
+}
+.hero nav li{
+    display: inline-block;
+    list-style: 'none';
+    margin-left: 10px;
+    border: 1px solid white;
+}
+.hero nav a{
+    background: rgba(0,0,0, 0.3);
+    color: rgb(72, 112, 150);
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.hero nav a:hover{
+    background: rgba(0,0,0, 0.5);
+}
+p{
+    line-height: 1.5;
+}
+
+
+.rodape{
+    font-family:  Helvetica, sans-serif;
+    background-color: black;
+    padding: 15px;
+    text-align: center;
+    color: rgb(72, 112, 150);
+    font-size: 12px;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 4px;
+}
