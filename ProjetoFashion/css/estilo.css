@@ -40,7 +40,37 @@ body{
 p{
     line-height: 1.5;
 }
+
+
 .content-section{
+    background-color: white;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    overflow: auto;
+}
+.card{
+    width: 32%;
+    float: left;
+    box-sizing: border-box;
+}
+.card-1, .card-2{
+    margin-right: 2%;
+}
+.card img{
+    width: 100%;
+    display: block;
+}
+.card p{
+    background-color: rgb(87, 85, 85) ;
+    color: white;
+    margin: 0;
+    padding: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.content-section2{
     background-image: url(../imagens/bg_detalhe.png);
     height: 400px;
     background-position: right center;
@@ -50,14 +80,15 @@ p{
     overflow: auto;
     font-family:   Tahoma, sans-serif;
 }
-.content-section h1{
+.content-section2 h1{
     text-transform: uppercase;
     font-size: 40px;
     font-stretch: condensed;
 }
-.content-section p{
+.content-section2 p{
     padding-right: 400px;
 }
+
 .content-final{
     text-transform: uppercase;
     text-align: center;
