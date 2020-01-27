@@ -1,6 +1,5 @@
 body{
     font-family: verdana, arial, sans-serif;
-    background: #ccc;
     margin: 10px 100px 40px 100px;
 }
 .hero{
@@ -41,19 +40,25 @@ p{
     line-height: 1.5;
 }
 
-
 .content-section{
     background-color: white;
-    padding: 10px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    overflow: auto;
+    padding: 80px;
+    margin: 100px 50px 150px 50px;
+}
+.content-section h1{
+    font-size: 32px;
+    text-align: center;
+}
+.content-section p{
+    color: rgb(54, 53, 53);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 .card{
     width: 25%;
     float: left;
     box-sizing: border-box;
-    margin: 0 50px 0 50px;
+    margin: 40px 40px 40px 40px;
 }
 .card-1, .card-2{
     margin-right: 2%;
@@ -79,10 +84,11 @@ p{
 
 .content-section2{
     background-image: url(../imagens/bg_detalhe.png);
-    height: 400px;
     background-position: right center;
     background-size: cover;
+    height: 400px;
     padding: 80px;
+    margin: 100px 50px 150px 50px;
     color: white;
     overflow: auto;
     font-family:   Tahoma, sans-serif;
