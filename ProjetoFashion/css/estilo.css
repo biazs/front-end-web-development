@@ -2,7 +2,7 @@ body{
     font-family: verdana, arial, sans-serif;
     margin: 10px 100px 40px 100px;
 }
-.hero{
+.header-topo{
     height: 500px;
     background-position: right center;
     background-size: cover;
@@ -15,16 +15,16 @@ body{
     margin-top: 40px;
     position: relative;
 }
-.hero nav ul{
+.header-nav ul{
     text-align: right;
     margin: 20px 50px 0 0;
 }
-.hero nav li{
+.header-nav li{
     display: inline-block;
     list-style: 'none';
     margin-left: 10px;
 }
-.hero nav a{
+.header-nav a{
     background: rgba(0,0,0, 0.3);
     color: rgb(72, 112, 150);
     display: block;
@@ -34,7 +34,7 @@ body{
     font-size: 12px;
     letter-spacing: 1px;
 }
-.hero nav a:hover{
+.header-nav a:hover{
     background: rgba(0,0,0, 0.5);
 }
 p{
@@ -94,7 +94,7 @@ p{
     overflow: auto;
     font-family: Tahoma, sans-serif;
 }
-.content-section2 h1{
+.content-section2 h2{
     text-transform: uppercase;
     font-size: 40px;
     margin-top: 0.5px;
