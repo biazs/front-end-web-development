@@ -7,11 +7,13 @@ body{
     background-position: right center;
     background-size: cover;
     border-top: 1px solid transparent;
+    position: relative;
 }
 .hero-content{
     text-align: center;
     color: white;
     margin-top: 40px;
+    position: relative;
 }
 .hero nav ul{
     text-align: right;
