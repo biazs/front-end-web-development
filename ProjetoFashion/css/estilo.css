@@ -108,6 +108,7 @@ p{
     color: rgb(36, 49, 61);
     font-family:   Tahoma, sans-serif;
 }
+
 .rodape{
     font-family:  Helvetica, sans-serif;
     background-color: black;
@@ -118,4 +119,5 @@ p{
     height: 40px;
     line-height: 40px;
     letter-spacing: 4px;
+    margin-top: 60px;
 }
