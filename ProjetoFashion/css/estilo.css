@@ -59,47 +59,33 @@ body{
     font-size: 16px;
     line-height: 2;
     color: #555;
-    
 }
 
-
-.hero-content{
-    text-align: center;
-    color: white;
-    margin-top: 40px;
-    position: relative;
+.gallery{
+    color: #555;
+    padding: 0 100px 50px 100px;
+    overflow: auto;
 }
-p{
-    line-height: 1.5;
-}
-
-
 .gallery-card{
-    width: 25%;
+    width: 32%;
     float: left;
+    text-align: center;
     box-sizing: border-box;
     margin: 40px 40px 40px 40px;
 }
-.card-1, .card-2{
-    margin-right: 2%;
-}
-.card img{
-    width: 100%;
-    display: block;
-}
-.card h1{
+
+.gallery-title{
     text-transform: uppercase;
     letter-spacing: 4px;
     color: rgb(70, 68, 68);
-    font-size: 14px;
-    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
 }
-.card p{
+.gallery-text{
     color: gray;
     margin: 0;
     padding: 5px;
     letter-spacing: 1.5px;
-    text-align: center;
 }
 
 .about{
