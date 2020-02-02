@@ -108,13 +108,20 @@ body{
 }
 
 .contact{
+    margin: 50px 0;
+    
+}
+.contact address{
     text-transform: uppercase;
     text-align: center;
     font-size: 26px;
     color: rgb(36, 49, 61);
-    font-family:   Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: bold;
 }
-
+.maps{
+    
+}
 .rodape{
     font-family:  Helvetica, sans-serif;
     background-color: black;
