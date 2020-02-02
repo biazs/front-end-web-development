@@ -1,5 +1,5 @@
 body{
-    font-family: verdana, arial, sans-serif;
+    font-family: tahoma, arial, sans-serif;
     margin: 10px 100px 40px 100px;
 }
 .header-topo{
@@ -52,7 +52,7 @@ p{
 }
 .portfolio p{
     color: rgb(54, 53, 53);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:  Tahoma, Geneva, Verdana, sans-serif;
     
 }
 .gallery-card{
