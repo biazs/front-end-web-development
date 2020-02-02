@@ -42,8 +42,27 @@ body{
     letter-spacing: 5px;
 }
 .header-nav a:hover{
-    background: rgba(0,0,0, 0.5);
+    color: white;
 }
+
+.portfolio{
+    background-color: white;
+    padding: 80px 100px;
+    margin: 100px 50px 150px 50px;
+    text-align: center;
+}
+.portfolio h1{
+    font-size: 36px;
+    color: #252525;
+}
+.portfolio p{
+    font-size: 16px;
+    line-height: 2;
+    color: #555;
+    
+}
+
+
 .hero-content{
     text-align: center;
     color: white;
@@ -54,20 +73,7 @@ p{
     line-height: 1.5;
 }
 
-.portfolio{
-    background-color: white;
-    padding: 80px;
-    margin: 100px 50px 150px 50px;
-}
-.portfolio h1{
-    font-size: 32px;
-    text-align: center;
-}
-.portfolio p{
-    color: rgb(54, 53, 53);
-    font-family:  Tahoma, Geneva, Verdana, sans-serif;
-    
-}
+
 .gallery-card{
     width: 25%;
     float: left;
