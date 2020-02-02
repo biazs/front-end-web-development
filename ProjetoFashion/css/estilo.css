@@ -67,7 +67,7 @@ body{
     overflow: auto;
 }
 .gallery-card{
-    width: 32%;
+    width: 30%;
     float: left;
     text-align: center;
     box-sizing: border-box;
@@ -90,22 +90,21 @@ body{
 
 .about{
     background-image: url(../imagens/bg_detalhe.png);
-    height: 500px;
+    background-repeat: no-repeat;
+    background-color: #003d52;
     background-position: right center;
-    background-size: cover;
-    padding: 80px;
-    margin: 100px 50px 150px 50px;
+    padding: 100px;
     color: white;
-    overflow: auto;
-    font-family: Tahoma, sans-serif;
 }
 .about h2{
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 50px;
+    font-weight: normal;
     margin-top: 0.5px;
 }
 .about p{
-    padding-right: 400px;
+    line-height: 1.5;
+    width: 70%;
 }
 
 .contact{
