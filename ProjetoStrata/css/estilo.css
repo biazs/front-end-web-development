@@ -92,6 +92,12 @@ li{
     color: #49bf9d;
 }
 
+input, label, textarea{
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 .button-default{
     background-color: #49bf9d;
     border: 2px solid #49bf9d;
@@ -180,11 +186,23 @@ li{
     box-sizing: border-box;
 }
 
+/* Grid */
 .row{
     overflow: auto;
 }
 .col-2{
     width: 50%;
     float: left;    
+}
+
+.col-2-3{
+    width: 65%;
+    float: left;
+}
+
+.col-1-3{
+    width: 32%;
+    margin-left: 3%;
+    float: left;
 }
 
