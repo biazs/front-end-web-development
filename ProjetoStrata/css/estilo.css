@@ -98,6 +98,23 @@ input, label, textarea{
     box-sizing: border-box;
 }
 
+input, textarea{
+    background: #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    border: 3px solid transparent;
+    margin-bottom: 15px;
+}
+
+input:focus, textarea:focus{
+    border: 3px solid #49bf9d;
+    outline: none;
+}
+
+textarea{
+    height: 10em;
+}
+
 .button-default{
     background-color: #49bf9d;
     border: 2px solid #49bf9d;
@@ -106,6 +123,7 @@ input, label, textarea{
     border-radius: 5px;
     font-size: .8em;
     display: inline-block;
+    width: auto;
 }
 
 .button-default-stroke{
@@ -117,6 +135,11 @@ input, label, textarea{
 .button-default-small{
     font-size: 0.6em;
 }
+
+.button-default-big{
+    font-size: 1em;
+}
+
 .button-default-full{
     display: block;
     text-align: center;
@@ -191,8 +214,16 @@ input, label, textarea{
     overflow: auto;
 }
 .col-2{
-    width: 50%;
+    width: 49%;
     float: left;    
+}
+
+.col-2:first-child{
+    margin-right: 1%;
+}
+
+.col-2:last-child{
+    margin-left: 1%;
 }
 
 .col-2-3{
