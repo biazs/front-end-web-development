@@ -21,9 +21,9 @@
             
             <h1 class="main-header-title">Trabalhos e groselhas de <br> 
                 <strong>Fabiana Zoroastro</strong> , <br>
-                aprendiz de desenvolvimento Web <br>
-                Retirado de <a href="#" class="main-header-link"> biazs.com</a>
-            </h1>            
+                aprendiz de desenvolvimento Web 
+            </h1>
+            <p>Retirado de <a href="#" class="main-header-link"> biazs.com</a></p>           
         </header>
         
         <main class=main-content>
@@ -164,8 +164,9 @@
                 <h6>Titulo h6</h6>
 
                 <blockquote cite="http://developer.mozilla.org">
-                    Esta é uma citação tirada da
-                    Mozilla Developer Center.
+                    <p>Esta é uma citação tirada da
+                        Mozilla Developer Center.</p>
+                        <p>Outros paragrafos</p>
                 </blockquote>
 
                 <p>According to Mozilla's website,
@@ -175,13 +176,12 @@
                 </p>
 
                 <h4>Preformatado</h4>
-                <pre>
-                    <code>
+                <pre><code>
                         &lt;script&gt;
                         alert('oi');
                         &lt;/script&gt;
-                    </code>
-                </pre>
+                </code></pre>
+                
 
                 <h4>Listas</h4>
                 <div class="row">
@@ -208,8 +208,8 @@
                         </ul>
                         <h5>Icons</h5>
                         <ul class="ul-icons">
-                            <li style="color:blueviolet"><i class="fab fa-twitter"></i></li>
-                            <li><i class="fab fa-facebook-square"></i></li>
+                            <li style="color:blueviolet"><span class="hidden">Twitter</span><i class="fab fa-twitter"></i></li>
+                            <li><span class="hidden">Facebook</span><i class="fab fa-facebook-square"></i></li>
                             <li><i class="fas fa-envelope-square"></i></li>
                         </ul>
                     </div>
@@ -362,32 +362,35 @@
                 <input type="submit" class="button-default" value="mandar">
 
                 <h5>Forms</h5>
+                <form action="#" method="POST">
                     <label for="name">Nome</label>
-                <input type="text" name="name" id="name">
-
-                <label for="email">Email</label>
-                <input type="text" name="email" id="email">
-
-                <select name="" id="">
-                    <option value="0">Selecione...</option>
-                    <option value="1">HTML</option>
-                    <option value="2">Javascript</option>
-                    <option value="3">CSS</option>
-                </select>
-
-                <label><input type="radio" value="baixa" name="prioridade"> Baixa prioridade</label>
-                <label><input type="radio" value="baixa" name="prioridade"> Media prioridade</label>
-                <label><input type="radio" value="baixa" name="prioridade"> Alta prioridade</label>
-
-                <label><input type="checkbox" name="copy" value="1">Envie-me uma copia</label>
-                <label><input type="checkbox" name="human" value="2">Sou humano</label>
-
-                <label for="msg">Mensagem:</label>
-                <textarea name="msg" id="msg" cols="30" rows="10" placeholder="digite uma mensagem"></textarea>
-
-                <input type="submit" class="button-default button-default-big" value="Enviar">
-                <input type="reset" class="button-default button-default-stroke button-default-big" value="Limpar">
-
+                    <input type="text" name="name" id="name">
+    
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email">
+    
+                    <select name="" id="">
+                        <option value="0">Selecione...</option>
+                        <option value="1">HTML</option>
+                        <option value="2">Javascript</option>
+                        <option value="3">CSS</option>
+                    </select>
+    
+                    <label><input type="radio" value="baixa" name="prioridade"> Baixa prioridade</label>
+                    <label><input type="radio" value="baixa" name="prioridade"> Media prioridade</label>
+                    <label><input type="radio" value="baixa" name="prioridade"> Alta prioridade</label>
+    
+                    <label><input type="checkbox" name="copy" value="1">Envie-me uma copia</label>
+                    <label><input type="checkbox" name="human" value="2">Sou humano</label>
+    
+                    <label for="msg">Mensagem:</label>
+                    <textarea name="msg" id="msg" cols="30" rows="10" placeholder="digite uma mensagem"></textarea>
+    
+                    <input type="submit" class="button-default button-default-big" value="Enviar">
+                    <input type="reset" class="button-default button-default-stroke button-default-big" value="Limpar">
+    
+                </form>
+                
             </section>
 
             <section class="main-content-section">
@@ -424,8 +427,8 @@
         <footer class="main-footer">
        
             <ul class="ul-icons">
-                <li><a href="#" class="icon-link"><span class="hidden"></span><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#" class="icon-link"><span class="hidden"></span><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#" class="icon-link"><span class="hidden">Twitter</span><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" class="icon-link"><span class="hidden">Facebook</span><i class="fab fa-facebook-square"></i></a></li>
             </ul>
             <ul class="copyright">
                 <li>© Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
