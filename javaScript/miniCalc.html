@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Fabiana">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">        
+    </head>
+    <body>
+        <h1>Mini calculadora</h1>        
+        <button onclick="somar()">+</button>
+        <button onclick="subtrair()">-</button>
+        <button onclick="multiplicar()">*</button>
+        <button onclick="dividir()">/</button>        
+        <div id="output"></div>
+        <script>            
+            function somar(){
+                var som = parseFloat(prompt('Digite outro número: '));                     
+                output.innerHTML = n + som;
+                n += som; 
+            }
+            function subtrair(){
+                var sub = parseFloat(prompt('Digite outro número: '));                
+                output.innerHTML = n - sub;
+                n -= sub;
+                console.log('n: '+n);
+            }
+            function multiplicar(){
+                var mult = parseFloat(prompt('Digite outro número: '));                
+                output.innerHTML = n * mult;
+                n *= mult;
+            }
+            function dividir(){
+                var div = parseFloat(prompt('Digite outro número: '));                
+                output.innerHTML = n / div;
+                n /= div;
+            }            
+            var output = document.querySelector('#output');            
+            var n = parseFloat(prompt('Digite um número: '));
+        </script>
+    </body>
+</html>
