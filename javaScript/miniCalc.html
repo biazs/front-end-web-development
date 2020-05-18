@@ -24,8 +24,13 @@
 
                 var n2 = parseFloat(prompt('Digite outro número: '));   
 
-                var msg = calcular(comando, n1, n2);
-
+                try{
+                    var msg = calcular(comando, n1, n2);
+                }
+                catch(e){
+                    alert(e);
+                    return;
+                }                
                 escreve(msg);
             }
 
@@ -35,6 +40,15 @@
 
             function calcular(operador, n1, n2)
             {                
+                if(operador !== "+" && operador !== "-" && operador !== "*" && operador !== "/")
+                {
+                    throw new Error("Símbolo inválido"); 
+                }
+                if( isNaN(n1) || isNaN(n2) )
+                {
+                    throw new Error("É permitido somente números"); 
+                }
+                
                 var numeroCalculado = null;                                    
                 switch(operador){
                     case "+" :
