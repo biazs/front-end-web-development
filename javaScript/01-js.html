@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Fabiana">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">        
+    </head>
+    <body>
+        <button onclick="mostrarTabuada()">Criar tabuada</button>
+        <button onclick="limparTabuada()">Limpar</button>
+        <div id="output"></div>
+        <script>
+            function mostrarTabuada(){
+                var n = parseFloat(prompt('Digite um número: '));
+                var mensagem = '';
+                for(i=0; i<=1000; i++){
+                    mensagem += n + ' x ' + i + ' = ' + (n * i) + '<br>';
+                }
+                output.innerHTML=mensagem;
+            }
+            function limparTabuada(){
+                
+            }
+            var output = document.querySelector('#output');            
+        </script>
+    </body>
+</html>
