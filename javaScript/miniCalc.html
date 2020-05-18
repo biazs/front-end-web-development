@@ -9,10 +9,10 @@
     </head>
     <body>
         <h1>Mini calculadora</h1>        
-        <button onclick="somar()">+</button>
-        <button onclick="subtrair()">-</button>
-        <button onclick="multiplicar()">*</button>
-        <button onclick="dividir()">/</button>        
+        <button onclick="calcular('+')">+</button>
+        <button onclick="calcular('-')">-</button>
+        <button onclick="calcular('*')">*</button>
+        <button onclick="calcular('/')">/</button>        
         <div id="output"></div>
         <script>            
             var n1 = parseFloat(prompt('Digite um número: '));             
@@ -22,27 +22,26 @@
                 var output = document.querySelector('#output'); 
                 output.innerHTML = '<p>'+ n1 +'</p>';
             }
-            function somar(){
+            function calcular(operador)
+            {
                 var n = parseFloat(prompt('Digite outro número: '));                                     
-                n1 += n; 
+                switch(operador){
+                    case "+" :
+                        n1 += n;
+                        break;
+                    case '-' :
+                        n1 -= n;                        
+                        break;
+                    case '*' :
+                        n1 *= n;
+                        break;
+                    case '/' :
+                        n1 /= n;
+                        break;
+                }
+
                 escreve();
-            }
-            function subtrair(){
-                var n = parseFloat(prompt('Digite outro número: '));                                
-                n1 -= n;                
-                escreve();
-            }
-            function multiplicar(){
-                var n = parseFloat(prompt('Digite outro número: '));                                
-                n1 *= n;
-                escreve();
-            }
-            function dividir(){
-                var n = parseFloat(prompt('Digite outro número: '));                                
-                n1 /= n;
-                escreve();
-            }            
-                      
+            }                               
             
         </script>
     </body>
