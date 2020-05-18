@@ -15,29 +15,35 @@
         <button onclick="dividir()">/</button>        
         <div id="output"></div>
         <script>            
+            var n1 = parseFloat(prompt('Digite um número: '));             
+            escreve();
+
+            function escreve(){
+                var output = document.querySelector('#output'); 
+                output.innerHTML = '<p>'+ n1 +'</p>';
+            }
             function somar(){
-                var som = parseFloat(prompt('Digite outro número: '));                     
-                output.innerHTML = n + som;
-                n += som; 
+                var n = parseFloat(prompt('Digite outro número: '));                                     
+                n1 += n; 
+                escreve();
             }
             function subtrair(){
-                var sub = parseFloat(prompt('Digite outro número: '));                
-                output.innerHTML = n - sub;
-                n -= sub;
-                console.log('n: '+n);
+                var n = parseFloat(prompt('Digite outro número: '));                                
+                n1 -= n;                
+                escreve();
             }
             function multiplicar(){
-                var mult = parseFloat(prompt('Digite outro número: '));                
-                output.innerHTML = n * mult;
-                n *= mult;
+                var n = parseFloat(prompt('Digite outro número: '));                                
+                n1 *= n;
+                escreve();
             }
             function dividir(){
-                var div = parseFloat(prompt('Digite outro número: '));                
-                output.innerHTML = n / div;
-                n /= div;
+                var n = parseFloat(prompt('Digite outro número: '));                                
+                n1 /= n;
+                escreve();
             }            
-            var output = document.querySelector('#output');            
-            var n = parseFloat(prompt('Digite um número: '));
+                      
+            
         </script>
     </body>
 </html>
