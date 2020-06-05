@@ -34,6 +34,21 @@
                 console.log('função passada por parâmetro');
             });
 
+            console.log("-----------");
+
+            var x = 0;
+
+            function mostraX(){
+                var x = 10; //escopo local
+                y = 10; //escopo global
+                console.log('Mostra x: ', x);
+            }
+
+            mostraX();
+
+            console.log('Mostra x: ', x);
+            console.log('Mostra y: ', y);
+
         </script>
     </head>
     <body>
