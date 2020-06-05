@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title> Funções Javascript </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Fabiana">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia, javascript">        
+
+        <script>
+            //IIFE - Função auto invocável
+            /*IMC: peso / altura*altura
+            Classificação
+            16 a 16,9 - muito abaixo do peso
+            17 a 18,4 - abaixo do peso
+            18,5 a 24,9 - peso normal
+            25 a 29,9 - acima do peso
+            30 a 34,9 - obesidade grau 1
+            35 a 40 - obesidade grau 2
+            maior que 40 - obesidade grau 3
+            */
+            (function(){
+                'use strict';                                 
+                function calcularImc(){                     
+                    return arguments[0] / (arguments[1]*arguments[1]);                                        
+                }
+
+                function classificarImc(imc){                        
+                    var classificacao = "";                    
+                                                
+                        if(imc <= 16.9)
+                            classificacao = "muito abaixo do peso";                                
+                        else if(imc >= 17 && imc <= 18.4)
+                            classificacao = "abaixo do peso";                                
+                        else if(imc >= 18.5 && imc <= 24.9)
+                            classificacao = "peso normal";
+                        else if(imc >= 25 && imc <= 29.9)
+                            classificacao = "acima do peso";
+                        else if(imc >= 30 && imc <= 34.9)
+                            classificacao = "obesidade grau 1";
+                        else if(imc >= 35 && imc <= 40)
+                            classificacao = "obesidade grau 2";
+                        else if(imc > 40)
+                            classificacao = "obesidade grau 3";               
+
+                    return classificacao;
+                }
+
+                var imc1 = calcularImc(84, 1.80);
+                var imc2 = calcularImc(60, 1.65);
+
+                var classImc1 = classificarImc(imc1);
+                var classImc2 = classificarImc(imc2);
+
+                console.log('IMC 1: ', imc1, ' - Classificação: ', classImc1);
+                
+                console.log('IMC 2: ', imc2, ' - Classificação: ', classImc2);
+            })();  
+            
+        </script>
+
+    </head>
+    <body>
+        <h1> Funções Javascript </h1>
+    </body>
+</html>
