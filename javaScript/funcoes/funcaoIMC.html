@@ -21,8 +21,14 @@
             */
             (function(){
                 'use strict';                                 
-                function calcularImc(){                     
-                    return arguments[0] / (arguments[1]*arguments[1]);                                        
+                function calcularImc(peso, altura, callback){                     
+                    var imc = peso / (altura * altura);                                        
+
+                    if(callback && typeof callback === 'function'){
+                        return callback(imc);
+                    }
+                    
+                    return imc;
                 }
 
                 function classificarImc(imc){                        
@@ -44,17 +50,14 @@
                             classificacao = "obesidade grau 3";               
 
                     return classificacao;
-                }
+                }                
 
-                var imc1 = calcularImc(84, 1.80);
-                var imc2 = calcularImc(60, 1.65);
+                var classImc1 = calcularImc(84, 1.80, classificarImc);
+                var classImc2 = calcularImc(60, 1.65);
 
-                var classImc1 = classificarImc(imc1);
-                var classImc2 = classificarImc(imc2);
-
-                console.log('IMC 1: ', imc1, ' - Classificação: ', classImc1);
+                console.log('Classificação IMC: ', classImc1);
                 
-                console.log('IMC 2: ', imc2, ' - Classificação: ', classImc2);
+                console.log('Classificação IMC: ', classImc2);
             })();  
             
         </script>
