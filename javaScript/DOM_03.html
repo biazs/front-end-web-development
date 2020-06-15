@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title> Funções Javascript </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Fabiana">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia, javascript">
+    </head>
+    <body>
+        <h1> Funções Javascript </h1>
+        <input type="text" id="txtNome" value="Digite o nome">
+        <button onclick="escreve()">OK</button>
+        <br><br>
+        <div id="msg"></div>
+
+        <script>
+            var txtNome = document.querySelector('#txtNome');
+
+            function escreve(){
+                var nome = txtNome.value;
+                document.querySelector('#msg').innerHTML = "Bem-vindo, <b>" + nome + "</b>!";
+            }                            
+         </script>
+    </body>
+</html>
