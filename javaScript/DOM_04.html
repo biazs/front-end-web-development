@@ -9,15 +9,16 @@
     </head>
     <body>
         <h1> Funções Javascript </h1>
-        <input type="text" id="txtNome" value="Digite o nome" disabled>
+        <input type="text" id="txtNome" value="Digite o nome">
         <div id="msg"></div>
 
         <script>
             var $txt = document.querySelector("#txtNome");
             var nome = "Fabiana ";
-            var sobrenome = "Zoroastro";
+            var sobrenome = "Souza";
 
             document.querySelector("#txtNome").value = nome + sobrenome;
+            document.querySelector("#txtNome").readOnly = true;
 
          </script>
     </body>
