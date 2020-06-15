@@ -13,7 +13,7 @@
         <script>
             (function(){
                 var nome = prompt('Qual o seu nome?');
-                document.querySelector('#msg').textContent = "Bem-vindo, " + nome + "!";
+                document.querySelector('#msg').innerHTML = "Bem-vindo, <b>" + nome + "</b>!";
                 //document.getElementById('msg')
             })()
             //document.querySelector("h1").textContent = "Alterado via Javascript";
