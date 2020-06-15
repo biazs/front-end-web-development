@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Curso Javascript Completo 2018</title>
+        <meta charset="utf-8">
+        
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap-grid.css" rel="stylesheet">                
+    </head>
+    <body>
+        <h1>JavaScript</h1>
+
+        <h2>Subtitulo</h2>
+
+        <p class="paragrafo1">Primeiro paragrafo</p>
+        <p class="paragrafo2">Meu segundo paragrfo</p>
+        <p class="paragrafo3">Meu terceiro paragrfo</p>
+        <p class="paragrafo4">Meu quarto paragrfo</p>
+
+        <script>
+            (function(){
+                'use strict'                
+                var paragrafos = document.querySelectorAll('p');
+                var x=0; 
+                while(paragrafos[x]){
+                    paragrafos[x].textContent = x + " - Hackeado por Bia";
+                    x++;
+                }                
+            })()
+        </script>
+    </body>
+
+</html>
