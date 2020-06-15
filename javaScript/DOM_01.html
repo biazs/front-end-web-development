@@ -9,9 +9,14 @@
     </head>
     <body>
         <h1> Funções Javascript </h1>
-        
+        <div id="msg"></div>
         <script>
-            document.querySelector("h1").textContent = "Alterado via Javascript";
+            (function(){
+                var nome = prompt('Qual o seu nome?');
+                document.querySelector('#msg').textContent = "Bem-vindo, " + nome + "!";
+                //document.getElementById('msg')
+            })()
+            //document.querySelector("h1").textContent = "Alterado via Javascript";
          </script>
     </body>
 </html>
